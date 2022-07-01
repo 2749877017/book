@@ -1,0 +1,7 @@
+git init
+git status
+git remote add origin 仓库地址
+git pull --rebase origin master
+git add .
+git commit -m '注释'
+git push -u origin master    (git push -f origin master)为强行推
