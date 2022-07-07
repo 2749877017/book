@@ -73,14 +73,19 @@
 以上开发模式的特点是：
 
 1. 必须直接操作DOM，动态改变DOM对象的内容与样式。
+
 2. 必须要进行大量的字符串拼接，才能拼接出动态内容，然后绑定到视图（html）上。
+
 3. 这种绑定方式是单向的。即：使用javascript将动态数据绑定到DOM上，但是用户操作DOM引起的变化，却不能反映到javascript的动态数据上。
    
    ## 1.2.MVVM框架
    
    MVVM框架分为三个部分：分别是M（Model，模型层 ），V（View，视图层），VM（ViewModel，V与M连接的桥梁，也可以看作为控制器）
+
 4. M：模型层，主要负责业务数据相关；
+
 5. V：视图层，顾名思义，负责视图相关，细分下来就是html+css层；
+
 6. VM：V与M沟通的桥梁，负责监听M或者V的修改，是实现MVVM双向绑定的要点；
    MVVM支持双向绑定，意思就是当M层数据进行修改时，VM层会监测到变化，并且通知V层进行相应的修改，反之修改V层则会通知M层数据进行修改，以此也实现了视图与模型层的相互解耦；
    ![img](https://null_688_6639.gitee.io/javase/15Vue/assets/p01_00.png)
@@ -933,7 +938,7 @@ v-show也是根据条件展示元素的指令。带有 v-show 的元素始终会
                          return this.goods.quantity;
                      }
     ```
-
+    
                 },
                 methods: {
                     add() {
@@ -960,6 +965,7 @@ v-show也是根据条件展示元素的指令。带有 v-show 的元素始终会
                 }
             });
         </script>
+    
     </body>
 
 </html>
@@ -2747,7 +2753,7 @@ new Vue({
 
 ```html
 <router-link to="/aaa">aaa</router-link>
-   
+
 <router-link to="/bbb">bbb</router-link>
 
 <router-view></router-view>
@@ -3033,7 +3039,7 @@ Vue.use(ElementUI);
   
             </el-table-column>
   ```
-
+  
             <el-table-column label="姓名" width="180">
                 <template slot-scope="scope">
                     <el-popover trigger="hover" placement="top">
@@ -3045,7 +3051,7 @@ Vue.use(ElementUI);
                     </el-popover>
                 </template>
             </el-table-column>
-    
+      
             <el-table-column label="操作">
                 <template slot-scope="scope">
                     <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
@@ -3053,7 +3059,8 @@ Vue.use(ElementUI);
                 </template>
             </el-table-column>
         </el-table>
-    </div>
+  
+  </div>
 
 </template>
 <script>
@@ -3127,12 +3134,16 @@ new Vue({
 这个状态自管理应用包含以下几个部分：
 
 - **state**，驱动应用的数据源；
+
 - **view**，以声明方式将 **state** 映射到视图；
+
 - **actions**，响应在 **view** 上的用户输入导致的状态变化。
   以下是一个表示“单向数据流”理念的简单示意：
   ![](https://vuex.vuejs.org/flow.png)
   但是，当我们的应用遇到**多个组件共享状态**时，单向数据流的简洁性很容易被破坏：
+
 - 多个视图依赖于同一状态。
+
 - 来自不同视图的行为需要变更同一状态。
   对于问题一，传参的方法对于多层嵌套的组件将会非常繁琐，并且对于兄弟组件间的状态传递无能为力。对于问题二，我们经常会采用父子组件直接引用或者通过事件来变更和同步状态的多份拷贝。以上的这些模式非常脆弱，通常会导致无法维护的代码。
   因此，我们为什么不把组件的共享状态抽取出来，以一个全局单例模式管理呢？在这种模式下，我们的组件树构成了一个巨大的“视图”，不管在树的哪个位置，任何组件都能获取状态或者触发行为！
@@ -3164,6 +3175,7 @@ new Vue({
   
   每一个 Vuex 应用的核心就是 store（仓库）。“store”基本上就是一个容器，它包含着你的应用中大部分的**状态 (state)**。Vuex 和单纯的全局对象有以下两点不同：
 1. Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
+
 2. 你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地**提交 (commit) mutation**。这样使得我们可以方便地跟踪每一个状态的变化，从而让我们能够实现一些工具帮助我们更好地了解我们的应用。
    
    ## 24.4.最简单的 Store
@@ -3266,9 +3278,11 @@ new Vue({
    
    # 26.整合springboot+jwt
 - 搭建springboot-web项目
+
 - 添加jwt
   
   > jwt整合
+
 - 导包
   
   ```xml
@@ -3278,6 +3292,7 @@ new Vue({
     <version>3.4.0</version>
   </dependency>
   ```
+
 - 生成token(JSON)
   
   ```java
@@ -3356,5 +3371,7 @@ new Vue({
     }
   }
   ```
+
 - 发送给Vuejs（存储到sessionstorage，放到header）
+
 - Vuejs请求的时候，携带 token(使用header形式),如果刷新，从sessionstorage取出

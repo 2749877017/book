@@ -15,3 +15,11 @@
 ## 七、mybatis的常用标签[点击跳转](https://2749877017.github.io/book/#/mybatis的常用标签)
 
 ## 八、vue的使用[点击跳转](https://2749877017.github.io/book/#/vue的使用)
+
+## 九、springboot的使用[点击跳转](https://2749877017.github.io/book/#/springboot的使用)
+
+## 十、使用elementui的文件上传[点击跳转](https://2749877017.github.io/book/#/使用elementui的文件上传)
+
+## 十一、搭建Vue3.x环境[点击跳转](https://2749877017.github.io/book/#/搭建Vue3.x环境)
+
+## 十二、Vue3.x绑定数据与循环[点击跳转](https://2749877017.github.io/book/#/Vue3.x绑定数据与循环)
