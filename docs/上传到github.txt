@@ -1,0 +1,7 @@
+git init
+git status
+git remote add origin git@github.com:2749877017/book.git
+git pull --rebase origin master
+git add -A
+git commit -m '注释信息你自己想写的注释'
+git push -f origin master

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <!-- 网站名称 -->
+  <title>我的笔记</title>
+
+
+  <!-- 网站图标 -->
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Docsify/images/favicon.ico">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- 网站描述 -->
+  <meta name="description" content="记录当下，方便未来">
+
+  <!-- 主题 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+
+  <!-- alert 复制特效 -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" type='text/css' media='all' />
+
+  <!-- latex -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+
+  <!-- 自定义CSS -->
+  <link rel="stylesheet" type="text/css" href="./plugin/css/mystyle.css">
+
+</head>
+
+<body>
+
+  <!-- 加载动画 -->
+  <div id="app">加载中...</div>
+
+  <script>
+    window.$docsify = {
+      // HTML表情符号：http://booksky.99lb.net/charsets/emoji.shtml
+
+      // 文档标题
+      name: '我的笔记',
+
+      
+
+      // Github横幅
+      // repo: 'https://github.com/zxiaosi/doc.git',
+
+      // 封面 _coverpage.md
+      coverpage: true,
+
+      // 封面和内容单独显示
+      onlyCover: true,
+
+      // 导航栏 _navbar.md
+      loadNavbar: false,
+
+      // 侧边栏 可以根据css样式来操作
+      loadSidebar: false,
+      subMaxLevel: 2,      
+
+      // 切换页面后是否自动跳转到页面顶部
+      auto2top: true,
+
+      // 让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间。
+      topMargin: 48, // default: 0
+
+      // 页脚 _footer.md 需要在下面引入js文件
+      loadFooter: true,
+
+      // 不渲染文件
+      // notFoundPage: '_404.md',
+
+      
+     
+
+      // Markdown 引用样式 (可以不加,有默认样式)
+      // 'flexible-alerts': {
+      //   note: {
+      //     label: "Hinweis"  // Note
+      //   },
+      //   tip: {
+      //     label: "Tipp"  // Tip
+      //   },
+      //   warning: {
+      //     label: "Warnung"  // Warning
+      //   },
+      //   attention: {
+      //     label: "Achtung"  // Attention
+      //   }
+      // }
+
+      // 复制样式 (可以不加,有默认样式)
+      copyCode: {
+          buttonText: 'Copy',   // Copy to clipboard
+          errorText: 'Error',   // Error
+          successText: 'OK!'    // Copied
+      },
+
+      // 回到顶部
+      scrollToTop: {
+        auto: true,
+        text: '',
+        right: 12,
+        bottom: 52,
+        offset: 25
+      },
+
+
+		 search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            noData: '找不到结果',//搜索不到结果时显示
+            paths: 'auto',//自动
+            placeholder: '搜索',//搜索框提示
+			 depth: 3,
+			  hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+        },
+    }
+  </script>
+
+  <!-- 官方插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+  <!-- 表情符号 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+  <!-- 支持 LaTex 语言 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+
+  <!-- 图片放大 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- 全局搜索 -->
+
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+
+
+  
+
+  <!-- 红心点击特效 -->
+  <!-- 未找到作者 -->
+  <script src="//cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script> 
+
+  <!-- 卜算子统计 -->
+  <!-- http://busuanzi.ibruce.info/ -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <!-- Markdown 引用样式美化 -->
+  <!-- https://github.com/fzankl/docsify-plugin-flexible-alerts -->
+  <script src="//unpkg.com/docsify-plugin-flexible-alerts@1.1.0/dist/docsify-plugin-flexible-alerts.min.js"></script>
+
+  <!-- 复制到剪切板 -->
+  <!-- https://github.com/jperasmus/docsify-copy-code -->
+  <script src="//unpkg.com/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
+
+  <!-- 复制提醒 -->
+  <!-- 和 <head></head> 中 alert 对应 -->
+  <script src="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+ 
+
+  <!-- 回到顶部功能 -->
+  <!-- https://www.npmjs.com/package/docsify-scroll-to-top -->
+  <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+
+  <!-- 页脚文件 -->  
+  <!-- Github: https://github.com/alertbox/docsify-footer -->
+  <!-- 文档地址: https://alertbox.github.io/docsify-footer/#/quick-start -->
+  <!-- 因为代码最后一行有注释,导致浏览器有警告,于是复制了一份 -->
+  <script src="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Docsify/js/docsify-footer.min.js"></script> 
+
+  <!-- 添加网站运行时间统计 -->
+  <!-- 在 _footer.md 中调用 
+    <span id="timeDate">载入天数...</span>
+	  <span id="times">载入时分秒...</span>  
+  -->
+  
+  <script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("03/01/2021 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+      }
+    setInterval("createtime()",250);
+  </script>
+
+  <!-- L2D模型 -->
+  <!-- https://github.com/xiazeyu/live2d-widget.js -->
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+    L2Dwidget.init({
+      "model": {
+        //jsonpath控制显示那个小萝莉模型，
+        //(切换模型需要改动)
+        // 小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json 
+	      // 萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json 
+        // 小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json 
+        // 小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json 
+        // 初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json  
+       // 萌: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+		jsonPath:"https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+        "scale": 1
+      },
+      "display": {
+        "position": "right", //看板娘的表现位置
+        "width": 70,  //小萝莉的宽度
+        "height": 140, //小萝莉的高度
+        "hOffset": 35,
+        "vOffset": -20
+      },
+      "mobile": {
+        "show": true,
+        "scale": 0.5
+      },
+      "react": {
+        "opacityDefault": 0.7,
+        "opacityOnHover": 0.2
+      }
+    });
+  </script>
+
+ 
+
+  <!-- 代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
+  
+  <!-- 离线模式 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+
+</body>
+</html>
