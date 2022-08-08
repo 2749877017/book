@@ -24,4 +24,4 @@
 
 ## 十二、Vue3.x绑定数据与循环[点击跳转](https://2749877017.github.io/book/#/Vue3.x绑定数据与循环)
 
-## 十三、将jar转为maven[点击跳转](https://2749877017.github.io/book/#/将jar转为maven[)
+## 十三、将jar转为maven[点击跳转](https://2749877017.github.io/book/#/将jar转为maven)
