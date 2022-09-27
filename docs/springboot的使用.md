@@ -66,7 +66,6 @@ https://spring.io/tools
  ![](./img/springboot/springboot4.png)
  ![](./img/springboot/springboot5.png)
  ![](./img/springboot/springboot6.png)
- 
 
 ## 2.4. Maven方式构建
 
@@ -77,7 +76,7 @@ https://spring.io/tools
 #### 2.4.1. 创建maven工程
 
 ![](./img/springboot/springboot7.png)
- 
+
 ![](./img/springboot/springboot8.png)
  ![](./img/springboot/springboot9.png)
  ![](./img/springboot/springboot10.png)
@@ -421,10 +420,7 @@ SpringBoot-starter-web内嵌的Tomcat无法解析jsp（Thymeleaf）,需要额外
 
 ### 10.2.3 指定springboot的启动目录
 
- 
-
 ![](./img/springboot/启动目录1.png)
-
 
 ![](./img/springboot/启动目录2.png)
 
@@ -710,7 +706,6 @@ slf4j ：面向日志的接口
 ### 12.6.1. 测试Controller
 
 ```java
-
 @RestController
 public class HelloConfigController {
     Logger logger = LoggerFactory.getLogger(HelloConfigController.class);
@@ -811,32 +806,30 @@ https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/html/appendix-ap
    ```
    
    ### 9.2.2. 测试Tomcat
-   
-    
-   
-   ### 9.2.3. 引入jetty的启动器
-   
+
+### 9.2.3. 引入jetty的启动器
+
    排除Tomcat的启动器
    也不能引入jasper，因为jasper会依赖Tomcat。
-   
-   ```xml
-   <dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-        <exclusions>
-            <exclusion>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-            </exclusion>
-        </exclusions>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-jetty</artifactId>
-    </dependency>
-   </dependencies>
-   ```
+
+```xml
+<dependencies>
+ <dependency>
+     <groupId>org.springframework.boot</groupId>
+     <artifactId>spring-boot-starter-web</artifactId>
+     <exclusions>
+         <exclusion>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-tomcat</artifactId>
+         </exclusion>
+     </exclusions>
+ </dependency>
+ <dependency>
+     <groupId>org.springframework.boot</groupId>
+     <artifactId>spring-boot-starter-jetty</artifactId>
+ </dependency>
+</dependencies>
+```
 
 ## 13.3. Jetty对jsp的支持
 
@@ -863,20 +856,14 @@ springboot中的jetty为内嵌的jetty，支持jsp需要添加额外的依赖
 
 ### 13.3.2. 编写了一个jsp
 
- 
-
 ## 13.4. 自动配置的ViewResolver
 
 在WebMvcAutoConguration类中有一个内置的Bean InternalResourceViewResolver
-
- 
 
 通过WebMvcProperties配合所有的mvc的属性前缀spring.mvc
 在属性文件中配置视图解析器解析jsp的前后缀
 
 ### 13.4.1. 配置视图解析器：
-
- 
 
 ## 13.5打包时对jsp的影响
 
