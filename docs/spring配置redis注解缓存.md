@@ -1,8 +1,8 @@
 # spring配置redis注解缓存
 
-## 一、**spring的主配置中声明注解缓存**
+## 一、spring的主配置中声明注解缓存
 
-### **1.spring的主配置中声明注解缓存:<cache:annotation-driven cache-manager="redisCacheManager"/>**
+### 1.spring的主配置中声明注解缓存:<cache:annotation-driven cache-manager="redisCacheManager"/>
 
 **注意:此步骤必须做，必须声明采用的缓存管理器是自己配置的redisCacheManager，否则会报错。**
 
