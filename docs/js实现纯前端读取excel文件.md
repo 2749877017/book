@@ -11,12 +11,11 @@
 ### 1.首先在HTML中定义如下
 
 ```html
-<input type="file" id="inputfilename">	<!--选择文件的input-->
+<input type="file" id="inputfilename">    <!--选择文件的input-->
 
 <button onclick="readWorkbookFromLocalFile()">读取Excel表格</button> <!--读取文件的按钮-->
 
 <div id="result"></div> <!--显示所读取excel的区域-->
-
 ```
 
 ### 2. 引入JS
@@ -46,7 +45,6 @@
           alert('请先选择文件');
         }
       }
-
 ```
 
 ### 4. 得到exce文件的csv和json格式
@@ -59,7 +57,7 @@ var json = null;
 var csv = '';
 
  function readWorkbook(workbook) {
- 
+
    var sheetNames = workbook.SheetNames; // 工作表名称集合
    var worksheet = workbook.Sheets[sheetNames[0]]; // 这里我们只读取第一张sheet的内容
 
@@ -92,7 +90,6 @@ var csv = '';
      }
    }
  }
-
 ```
 
 到这里就能够实现通过SheetJS在页面中显示从本地读取到的excel文件了，也能够拿到想要与后台进行交互时的标准json数据格式，最后只需要发送Ajax与后台进行交互就OK拉！

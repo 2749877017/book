@@ -28,4 +28,4 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 vue create hello-vue3
 ```
 
-## 二、目录结构介绍![image-20201023183202405.png](http://bbs.itying.com/public/upload/f38ad580-2d39-11eb-8ac2-41a88e51bce8.png)
+# 

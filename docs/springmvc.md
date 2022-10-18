@@ -185,7 +185,7 @@
       <!--静态资源处理-->
   <mvc:resources mapping="/img/**" location="/WEB-INF/img/" />
   ```
-
+  
       </beans>
 
 ```
@@ -223,23 +223,24 @@ public class HelloController implements Controller {
   ```java
   package com.neuedu;
   ```
-
+  
   import org.springframework.stereotype.Controller;
   import org.springframework.web.bind.annotation.RequestMapping;
   import org.springframework.web.servlet.ModelAndView;
-
+  
   @Controller
   @RequestMapping("/auto")
   public class AutoController {
+  
       @RequestMapping("/hello")
       public ModelAndView Hello(String name){
           ModelAndView mav=new ModelAndView();
           mav.addObject("msg",name);
           mav.setViewName("hello");
-
+      
           return mav;
       }
-
+  
   }
 
 ```
@@ -380,7 +381,3 @@ To change this template use File | Settings | File Templates.
   ```
   
   ？表示一个字符，必须有
-
-​       
-
-​        
