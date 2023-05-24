@@ -9,10 +9,9 @@ git push -u origin master    (git push -f origin master)ÎªÇ¿ĞĞÍÆ
 
 µ±push±¨´íÊ±¿ÉÏÈ´´½¨·ÖÖ§
 git branch ·ÖÖ§Ãû
-<<<<<<< HEAD
+
 git push -u origin ·ÖÖ§Ãû
-=======
-git push -u origin ·ÖÖ§Ãû
+
 
 
 
@@ -24,4 +23,4 @@ git stash list   ²é¿´ËùÒÔÕ»
 git stash apply stash@{1}   È¡³ö1°æ±¾£¬0Îª×îĞÂ
 git stash clear Çå¿ÕÕ»
 git reset --hard ·ÅÆú±¾µØµÄÒ»ÇĞĞŞ¸Ä
->>>>>>> 9fa2c24 (ç¬¬å…«ç‰ˆ)
+
