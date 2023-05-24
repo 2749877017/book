@@ -29,3 +29,7 @@
 ## 十四、js实现纯前端读取excel文件[点击跳转](https://2749877017.github.io/book/#/js实现纯前端读取excel文件)
 
 ## 十五、spring配置redis注解缓存[点击跳转](https://2749877017.github.io/book/#/spring配置redis注解缓存)
+
+## 十六、win解决端口占用问题[点击跳转](https://2749877017.github.io/book/#/win解决端口占用问题)
+
+## 十七、github无法连接远端[点击跳转](https://2749877017.github.io/book/#/github无法连接远端)
