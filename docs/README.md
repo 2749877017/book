@@ -33,3 +33,5 @@
 ## 十六、win解决端口占用问题[点击跳转](https://2749877017.github.io/book/#/win解决端口占用问题)
 
 ## 十七、github无法连接远端[点击跳转](https://2749877017.github.io/book/#/github无法连接远端)
+
+## 十八、使用pageInfo手动分页[点击跳转](https://2749877017.github.io/book/#/使用pageInfo手动分页)
